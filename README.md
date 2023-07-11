@@ -46,18 +46,18 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ## build image
 
 ```
-docker build -t nextjs-docker .
+docker build -t 1c44180c-docker .
 ```
 
 run at local
 
 ```
-docker run -p 3000:3000 nextjs-docker
+docker run -p 3000:3000 1c44180c-docker
 ```
 
 ## deploy to Cloud Run
 
 ```
-❯ gcloud run deploy bb1629be-frontend --source .
+gcloud run deploy 1c44180c --source .
 ```
 
