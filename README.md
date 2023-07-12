@@ -61,3 +61,46 @@ docker run -p 3000:3000 c44180c-docker
 gcloud run deploy c44180c --source .
 ```
 
+## setup
+
+### Ant Design
+
+```
+npm install antd
+```
+
+### Prettier
+
+```
+npm install --save-dev --save-exact prettier
+```
+
+### server-only
+
+```
+npm install server-only
+```
+
+### reset.css
+
+```
+npm install @acab/reset.css
+```
+
+### Prisma
+
+```
+npm install prisma --save-dev
+```
+
+```
+npx prisma init --datasource-provider mysql
+```
+
+```
+npm install @prisma/client
+```
+
+```
+npx prisma migrate dev --name init
+```
