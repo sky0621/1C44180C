@@ -1,7 +1,6 @@
 services:
-  mysql:
+  c44180c-db:
     image: mysql:8
-    container_name: mysql-c44180c
     environment:
       MYSQL_ROOT_PASSWORD: rootpass
       MYSQL_DATABASE: c44180c
@@ -9,5 +8,10 @@ services:
       MYSQL_PASSWORD: localpass
       TZ: Asia/Tokyo
     ports:
-      - 3306:3306
+      - 13306:3306
     platform: linux/arm64
+    volumes:
+      - c44180c-db-data:/var/lib/mysql
+
+volumes:
+  c44180c-db-data:
