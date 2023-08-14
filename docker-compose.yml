@@ -1,0 +1,36 @@
+services:
+  c44180c-db:
+    image: mysql:8
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpass
+      MYSQL_DATABASE: c44180c
+      MYSQL_USER: localuser
+      MYSQL_PASSWORD: localpass
+      TZ: Asia/Tokyo
+    ports:
+      - 13306:3306
+    platform: linux/arm64
+    volumes:
+      - c44180c-db-data:/var/lib/mysql
+
+  c44180c-app:
+    build: .
+    ports:
+      - 3000:3000
+    platform: linux/arm64
+    depends_on:
+      - c44180c-db
+    networks:
+      c44180c-app-network:
+    extra_hosts:
+      - db:172.28.1.5
+
+volumes:
+  c44180c-db-data:
+
+networks:
+  c44180c-app-network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.28.1.0/24
