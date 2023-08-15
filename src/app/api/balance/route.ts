@@ -1,4 +1,4 @@
-import { getBalance, getNetwork } from "@/lib/ethers";
+import { getBalance } from "@/lib/ethers";
 import { NextResponse } from "next/server";
 
 export async function GET(request: Request) {
@@ -11,10 +11,5 @@ export async function GET(request: Request) {
   const balance = await getBalance(apiKey, toAddress);
   console.log(PREFIX + " balance: " + balance);
 
-  const network = await getNetwork(apiKey);
-  console.log(PREFIX + " network: " + network);
-
-  return new NextResponse(
-    JSON.stringify({ balance: balance, network: network }),
-  );
+  return new NextResponse(JSON.stringify({ balance: balance }));
 }

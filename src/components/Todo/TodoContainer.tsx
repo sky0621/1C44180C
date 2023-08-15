@@ -20,9 +20,29 @@ const TodoContainer = async () => {
   const getBalanceResJson = await getBalanceRes.json();
   console.log(getBalanceResJson);
 
+  const getNetworkRes = await callGetApi("/network");
+  const getNetworkResJson = await getNetworkRes.json();
+  console.log(getNetworkResJson);
+  const networkObj = getNetworkResJson.network;
+  console.log(networkObj);
+
+  const getFeeRes = await callGetApi("/fee");
+  const getFeeResJson = await getFeeRes.json();
+  console.log(getFeeResJson);
+  const feeData = getFeeResJson.feeData;
+  console.log(feeData);
+
   return (
     <div>
-      <div>{getBalanceResJson.balance}</div>
+      <div>Balance: {getBalanceResJson.balance}</div>
+      <div>
+        Network: [name: {networkObj.name}][chainId: {networkObj.chainId}]
+      </div>
+      <div>
+        FeeData: [gasPrice: {feeData.gasPrice}][maxFeePerGas:{" "}
+        {feeData.maxFeePerGas}][maxPriorityFeePerGas:{" "}
+        {feeData.maxPriorityFeePerGas}]
+      </div>
       <TodoPresenter username={user?.username} dataSource={dataSource} />
     </div>
   );
