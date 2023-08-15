@@ -16,7 +16,16 @@ const TodoContainer = async () => {
     ...t,
   }));
 
-  return <TodoPresenter username={user?.username} dataSource={dataSource} />;
+  const getBalanceRes = await callGetApi("/balance");
+  const getBalanceResJson = await getBalanceRes.json();
+  console.log(getBalanceResJson);
+
+  return (
+    <div>
+      <div>{getBalanceResJson.balance}</div>
+      <TodoPresenter username={user?.username} dataSource={dataSource} />
+    </div>
+  );
 };
 
 export default TodoContainer;
