@@ -1,5 +1,4 @@
 # c44180c
-Next.js->CloudRun
 
 ## env
 
@@ -7,59 +6,27 @@ Next.js->CloudRun
 
 ```
 ❯ node -v
-v18.16.1
+v20.5.0
 ```
 
 ```
-❯ npm -v 
-9.7.2
+❯ pnpm -v 
+8.8.0
 ```
 
 ## create project
 
 ```
-❯ npx create-next-app@latest
-Need to install the following packages:
-  create-next-app@13.4.9
-Ok to proceed? (y) y
-✔ What is your project named? … my-app
-✔ Would you like to use TypeScript? … No / Yes
-✔ Would you like to use ESLint? … No / Yes
-✔ Would you like to use Tailwind CSS? … No / Yes
-✔ Would you like to use `src/` directory? … No / Yes
-✔ Would you like to use App Router? (recommended) … No / Yes
-✔ Would you like to customize the default import alias? … No / Yes
+
 ```
 
 ## Getting Started
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
 pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-## build image
-
-```
-docker build -t c44180c-docker .
-```
-
-run at local
-
-```
-docker run -p 3000:3000 c44180c-docker
-```
-
-## deploy to Cloud Run
-
-```
-gcloud run deploy c44180c --source .
-```
+Open http://localhost:3000
 
 ## setup
 
