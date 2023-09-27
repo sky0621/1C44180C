@@ -28,57 +28,16 @@ pnpm dev
 
 Open http://localhost:3000
 
-## setup
+## library in use
 
 ### Ant Design
 
 ```
-npm install antd
+pnpm install antd
 ```
 
 ### Prettier
 
 ```
-npm install --save-dev --save-exact prettier
+pnpm install --save-dev --save-exact prettier
 ```
-
-### server-only
-
-```
-npm install server-only
-```
-
-### reset.css
-
-```
-npm install @acab/reset.css
-```
-
-### Prisma
-
-```
-npm install prisma --save-dev
-```
-
-```
-npx prisma init --datasource-provider mysql
-```
-
-```
-npm install @prisma/client
-```
-
-```
-npx prisma migrate dev --name init
-```
-
-```
-npx prisma migrate dev
-```
-
-### ethers.js
-
-```
-npm install ethers
-```
-
