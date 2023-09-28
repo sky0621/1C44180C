@@ -41,3 +41,11 @@ pnpm install antd
 ```
 pnpm install --save-dev --save-exact prettier
 ```
+
+### reset.css
+
+https://github.com/mayank99/reset.css
+
+```
+pnpm install @acab/reset.css
+```
