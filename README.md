@@ -49,3 +49,11 @@ https://github.com/mayank99/reset.css
 ```
 pnpm install @acab/reset.css
 ```
+
+### ethers.js
+
+https://docs.ethers.org/v6/
+
+```
+pnpm install ethers
+```
