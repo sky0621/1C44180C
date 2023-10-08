@@ -23,8 +23,8 @@ npx hardhat init
 ### create token
 
 ```
-SkyToken contract deploy address: 0x298E730D934B5c66BaEBc5dAD85500bf9221059D
-Transaction URL: https://mumbai.polygonscan.com/tx/0x4930ca9078b2e3cece5216a61258142af66a72ebcba55581c3c8c72cf1ea1b52
+SkyToken contract deploy address: 0x66F152C7066896C26cb7EaC332430f8C10fEd16A
+Transaction URL: https://sepolia.etherscan.io/tx/0xcf4907654770c1eef2db6f3bbf24bfd2913821a211cbd791d14df36271dd4dc5
 ```
 
 ### library in use

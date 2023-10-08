@@ -4,7 +4,8 @@
     "compile": "npx hardhat compile",
     "test": "npx hardhat test",
     "coverage": "npx hardhat coverage",
-    "deploy": "dotenv -e .env.local ts-node scripts/deploy.ts"
+    "deploy": "dotenv -e .env.local ts-node scripts/deploy.ts",
+    "mint": "dotenv -e .env.local ts-node scripts/mint.ts"
   },
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox": "^3.0.0",
