@@ -28,6 +28,19 @@ pnpm dev
 
 Open http://localhost:3000
 
+## create contract
+
+```
+cd contract
+mkdir skyt
+npx hardhat init
+
+✔ What do you want to do? · Create a TypeScript project
+✔ Hardhat project root: · ./skyt
+✔ Do you want to add a .gitignore? (Y/n) · y
+✔ Do you want to install this sample project's dependencies with npm (hardhat @nomicfoundation/hardhat-toolbox)? (Y/n) · n
+```
+
 ## library in use
 
 ### Ant Design
@@ -57,3 +70,12 @@ https://docs.ethers.org/v6/
 ```
 pnpm install ethers
 ```
+
+### hardhat
+
+https://hardhat.org/
+
+```
+pnpm install --save-dev hardhat
+```
+
