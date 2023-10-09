@@ -39,16 +39,22 @@ export const getNetworkInfo = (): NetworkInfo => {
   };
 };
 
-export type PrivateInfo = {
+export type OwnerInfo = {
+  ownerAddress: string;
   privateKey: string;
 };
 
-export const getPrivateInfo = (): PrivateInfo => {
+export const getOwnerInfo = (): OwnerInfo => {
+  const ownerAddress: string = process.env.OWNER_ADDRESS ?? "";
+  if (ownerAddress === "") {
+    throw new Error("no env: OWNER_ADDRESS");
+  }
   const privateKey: string = process.env.PRIVATE_KEY ?? "";
   if (privateKey === "") {
     throw new Error("no env: PRIVATE_KEY");
   }
   return {
+    ownerAddress,
     privateKey,
   };
 };

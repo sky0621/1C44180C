@@ -4,10 +4,10 @@ import {
   getContractInfo,
   getMintInfo,
   getNetworkInfo,
-  getPrivateInfo,
+  getOwnerInfo,
   MintInfo,
   NetworkInfo,
-  PrivateInfo,
+  OwnerInfo,
 } from "./util";
 import skyTokenArtifacts from "../artifacts/contracts/skyt.sol/SkyToken.json";
 
@@ -15,8 +15,8 @@ const main = async () => {
   const networkInfo: NetworkInfo = getNetworkInfo();
   console.table(networkInfo);
 
-  const privateInfo: PrivateInfo = getPrivateInfo();
-  console.table(privateInfo);
+  const ownerInfo: OwnerInfo = getOwnerInfo();
+  console.table(ownerInfo);
 
   const mintInfo: MintInfo = getMintInfo();
   console.table(mintInfo);
@@ -27,7 +27,7 @@ const main = async () => {
   const provider = new ethers.JsonRpcProvider(networkInfo.rpcProviderUrl);
   console.info("got provider");
 
-  const wallet = new ethers.Wallet(privateInfo.privateKey, provider);
+  const wallet = new ethers.Wallet(ownerInfo.privateKey, provider);
   console.info("got wallet");
 
   const contract = new ethers.Contract(

@@ -30,11 +30,19 @@ Transaction URL: https://sepolia.etherscan.io/tx/0xcf4907654770c1eef2db6f3bbf24b
 ### library in use
 
 ```
+npm install --save-dev hardhat
+```
+
+```
 npm install @openzeppelin/contracts
 ```
 
 ```
 npm install --save ethers
+```
+
+```
+npm install --save-dev @openzeppelin/hardhat-upgrades @nomicfoundation/hardhat-ethers ethers
 ```
 
 ## SkyNFT

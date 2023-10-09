@@ -4,15 +4,21 @@
     "compile": "npx hardhat compile",
     "test": "npx hardhat test",
     "coverage": "npx hardhat coverage",
+    "node": "npx hardhat node",
     "deploy": "dotenv -e .env.local ts-node scripts/deploy.ts",
-    "mint": "dotenv -e .env.local ts-node scripts/mint.ts"
+    "deploy-upgradable": "dotenv -e .env.local ts-node scripts/deploy_upgradable.ts",
+    "deploy-local": "dotenv -e .env.local npx hardhat run --network localhost scripts/deploy.js",
+    "mint": "dotenv -e .env.local ts-node scripts/mint.ts",
+    "try": "dotenv -e .env.local ts-node scripts/try.ts"
   },
   "devDependencies": {
+    "@nomicfoundation/hardhat-ethers": "^3.0.4",
     "@nomicfoundation/hardhat-toolbox": "^3.0.0",
+    "@openzeppelin/hardhat-upgrades": "^2.3.1",
+    "ethers": "^6.7.1",
     "hardhat": "^2.18.0"
   },
   "dependencies": {
-    "@openzeppelin/contracts": "^5.0.0",
-    "ethers": "^6.7.1"
+    "@openzeppelin/contracts": "^5.0.0"
   }
 }

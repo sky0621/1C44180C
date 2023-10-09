@@ -1,0 +1,12 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="skyt-try" type="js.build_tools.npm">
+    <package-json value="$PROJECT_DIR$/contract/skyt/package.json" />
+    <command value="run" />
+    <scripts>
+      <script value="try" />
+    </scripts>
+    <node-interpreter value="project" />
+    <envs />
+    <method v="2" />
+  </configuration>
+</component>
