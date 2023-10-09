@@ -1,6 +1,6 @@
 import { HardhatUserConfig } from "hardhat/config";
 import "@nomicfoundation/hardhat-toolbox";
-import "@nomiclabs/hardhat-ethers";
+import "@nomicfoundation/hardhat-ethers";
 import "@openzeppelin/hardhat-upgrades";
 
 const config: HardhatUserConfig = {
@@ -10,7 +10,15 @@ const config: HardhatUserConfig = {
   },
   networks: {
     sepolia: {
-      url: process.env.SEPOLIA_RPC_PROVIDER_URL,
+      url: String(process.env.SEPOLIA_RPC_PROVIDER_URL!),
+      accounts: [process.env.PRIVATE_KEY!],
+    },
+    goerli: {
+      url: process.env.GOERLI_RPC_PROVIDER_URL!,
+      accounts: [process.env.PRIVATE_KEY!],
+    },
+    mumbai: {
+      url: process.env.MUMBAI_RPC_PROVIDER_URL!,
       accounts: [process.env.PRIVATE_KEY!],
     },
   },

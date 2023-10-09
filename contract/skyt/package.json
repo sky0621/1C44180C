@@ -1,7 +1,7 @@
 {
   "name": "hardhat-project",
   "scripts": {
-    "compile": "npx hardhat compile",
+    "compile": "dotenv -e .env.local npx hardhat compile",
     "test": "npx hardhat test",
     "coverage": "npx hardhat coverage",
     "node": "npx hardhat node",
