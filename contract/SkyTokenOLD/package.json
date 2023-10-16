@@ -1,5 +1,5 @@
 {
-  "name": "hardhat-project",
+  "name": "sky-token-project",
   "scripts": {
     "clean": "npx hardhat clean",
     "compile": "npx hardhat compile",
@@ -13,7 +13,14 @@
     "try": "dotenv -e .env.local ts-node scripts/try.ts"
   },
   "devDependencies": {
+    "@nomicfoundation/hardhat-ethers": "^3.0.4",
     "@nomicfoundation/hardhat-toolbox": "^3.0.0",
+    "@openzeppelin/hardhat-upgrades": "^2.3.1",
+    "ethers": "^6.7.1",
     "hardhat": "^2.18.0"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.0",
+    "dotenv": "^16.3.1"
   }
 }

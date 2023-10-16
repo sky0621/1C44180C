@@ -1,9 +1,9 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="skyt-deploy-upgradable" type="js.build_tools.npm">
-    <package-json value="$PROJECT_DIR$/contract/skyt/package.json" />
+  <configuration default="false" name="SkyToken-deploy_local" type="js.build_tools.npm">
+    <package-json value="$PROJECT_DIR$/contract/SkyToken/package.json" />
     <command value="run" />
     <scripts>
-      <script value="deploy-upgradable" />
+      <script value="deploy_local" />
     </scripts>
     <node-interpreter value="project" />
     <envs />

@@ -1,0 +1,40 @@
+{
+  "manifestVersion": "3.2",
+  "admin": {
+    "address": "0x182Eeb60950894A6cF2fa063a2Cce9545dE08E74",
+    "txHash": "0xf06caea61f4712e0e31a63af6c74f31897dba30891a406dcfb9e18ef39842373"
+  },
+  "proxies": [
+    {
+      "address": "0x00AB9EB90806F05b5beF2838905e326c4c75c0Cd",
+      "txHash": "0x883dbebc97328b98f3253fbbe1784e23eabc66f84803caa09e1012dbb90611ad",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "cba9f8cf52e3c449631a04ea218a6cedcaf7c366669cfc257c89a008266c768f": {
+      "address": "0xF7883096eCa6E171b51ae88fec8E08a11845ecF3",
+      "txHash": "0xa410b35518c82be1576265134e7a1e370ce682f2040700de34ab5ca76081d8c0",
+      "layout": {
+        "solcVersion": "0.8.20",
+        "storage": [
+          {
+            "label": "_value",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint256",
+            "contract": "SkyToken",
+            "src": "contracts/SkyToken.sol:5"
+          }
+        ],
+        "types": {
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        },
+        "namespaces": {}
+      }
+    }
+  }
+}

@@ -1,5 +1,5 @@
-import { ethers } from "ethers";
-import skyTokenArtifacts from "../artifacts/contracts/skyt.sol/SkyToken.json";
+import { ethers } from "hardhat";
+import skyTokenArtifacts from "../artifacts/contracts/skyt.sol/SkyTokenOLD.json";
 import { getNetworkInfo, getOwnerInfo, NetworkInfo, OwnerInfo } from "./util";
 
 const main = async () => {

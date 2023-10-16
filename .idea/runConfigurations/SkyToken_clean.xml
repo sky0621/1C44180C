@@ -1,9 +1,9 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="skyt-try" type="js.build_tools.npm">
-    <package-json value="$PROJECT_DIR$/contract/skyt/package.json" />
+  <configuration default="false" name="SkyToken-clean" type="js.build_tools.npm">
+    <package-json value="$PROJECT_DIR$/contract/SkyToken/package.json" />
     <command value="run" />
     <scripts>
-      <script value="try" />
+      <script value="clean" />
     </scripts>
     <node-interpreter value="project" />
     <envs />

@@ -7,7 +7,7 @@ import {
   NetworkInfo,
   OwnerInfo,
 } from "./util";
-import skyTokenArtifacts from "../artifacts/contracts/skyt.sol/SkyToken.json";
+import skyTokenArtifacts from "../artifacts/contracts/skyt.sol/SkyTokenOLD.json";
 
 const main = async () => {
   const networkInfo: NetworkInfo = getNetworkInfo();

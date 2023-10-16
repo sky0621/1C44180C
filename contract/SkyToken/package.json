@@ -1,0 +1,28 @@
+{
+  "name": "hardhat-project",
+  "scripts": {
+    "clean": "npx hardhat clean",
+    "compile": "npx hardhat compile",
+    "test": "npx hardhat test",
+    "coverage": "npx hardhat coverage",
+    "node": "npx hardhat node",
+    "console": "npx hardhat console --network localhost",
+    "deploy_local": "npx hardhat run --network localhost scripts/deploy.ts",
+    "deploy_local_v2": "npx hardhat run --network localhost scripts/deploy_v2.ts",
+    "update_deploy_local": "npx hardhat run --network localhost scripts/update_deploy.ts",
+    "deploy": "ts-node scripts/deploy.ts",
+    "mint": "ts-node scripts/mint.ts",
+    "try": "ts-node scripts/try.ts"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-ethers": "^3.0.4",
+    "@nomicfoundation/hardhat-toolbox": "^3.0.0",
+    "@openzeppelin/hardhat-upgrades": "^2.3.1",
+    "ethers": "^6.7.1",
+    "hardhat": "^2.18.0"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.0",
+    "dotenv": "^16.3.1"
+  }
+}

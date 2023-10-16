@@ -1,9 +1,9 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="skyt-compile" type="js.build_tools.npm">
-    <package-json value="$PROJECT_DIR$/contract/skyt/package.json" />
+  <configuration default="false" name="SkyToken-deploy" type="js.build_tools.npm">
+    <package-json value="$PROJECT_DIR$/contract/SkyToken/package.json" />
     <command value="run" />
     <scripts>
-      <script value="compile" />
+      <script value="deploy" />
     </scripts>
     <node-interpreter value="project" />
     <envs />

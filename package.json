@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@acab/reset.css": "^0.8.0",
+    "@openzeppelin/contracts-upgradeable": "^5.0.0",
     "antd": "^5.9.3",
     "ethers": "^6.7.1",
     "next": "latest",
